@@ -13,7 +13,7 @@ doctor_recc_seasonal            8.087464  binary   mode
 chronic_med_condition           3.635615  binary   mode
 child_under_6_months            3.070241  binary   mode
 health_worker                   3.010334  binary
-health_insurance               45.956268  binary
+health_insurance               45.956268  binary   delete
 opinion_h1n1_vacc_effective     1.463981  ordinal   
 opinion_h1n1_risk               1.452748  ordinal
 opinion_h1n1_sick_from_vacc     1.478958  ordinal
@@ -32,5 +32,5 @@ hhs_geo_region                  0.000000  nominal
 census_msa                      0.000000  nominal
 household_adults                0.932305  ratio
 household_children              0.932305  ratio
-employment_industry            49.910139  nominal
-employment_occupation          50.434327  nominal
+employment_industry            49.910139  nominal   delete
+employment_occupation          50.434327  nominal   delete
