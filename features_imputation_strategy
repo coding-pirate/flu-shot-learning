@@ -1,6 +1,7 @@
-respondent_id                   0.000000 
-h1n1_concern                    0.344466  ordinal  
-h1n1_knowledge                  0.434327  ordinal
+FEATURE                         %Null      Type  Strategy   C/NC
+
+h1n1_concern                    0.344466  ordinal  median
+h1n1_knowledge                  0.434327  ordinal  median
 behavioral_antiviral_meds       0.265838  binary   mode
 behavioral_avoidance            0.778793  binary   mode
 behavioral_face_mask            0.071140  binary   mode
@@ -13,24 +14,24 @@ doctor_recc_seasonal            8.087464  binary   mode
 chronic_med_condition           3.635615  binary   mode
 child_under_6_months            3.070241  binary   mode
 health_worker                   3.010334  binary   mode
-health_insurance               45.956268  binary   delete
-opinion_h1n1_vacc_effective     1.463981  ordinal   
-opinion_h1n1_risk               1.452748  ordinal
-opinion_h1n1_sick_from_vacc     1.478958  ordinal
-opinion_seas_vacc_effective     1.729819  ordinal
-opinion_seas_risk               1.924517  ordinal
-opinion_seas_sick_from_vacc     2.010634  ordinal
-age_group                       0.000000  ordinal  none
-education                       5.268084  ordinal
-race                            0.000000  ordinal  none
-sex                             0.000000  binary   mode
-income_poverty                 16.560581  ordinal   
+health_insurance               45.956268  binary   delete   C
+opinion_h1n1_vacc_effective     1.463981  ordinal  median 
+opinion_h1n1_risk               1.452748  ordinal  median
+opinion_h1n1_sick_from_vacc     1.478958  ordinal  median
+opinion_seas_vacc_effective     1.729819  ordinal  median
+opinion_seas_risk               1.924517  ordinal  median
+opinion_seas_sick_from_vacc     2.010634  ordinal  median
+age_group                       0.000000  ordinal  none     C
+education                       5.268084  ordinal  median
+race                            0.000000  ordinal  none     C
+sex                             0.000000  binary   none     C
+income_poverty                 16.560581  ordinal  median 
 marital_status                  5.271829  binary   mode
 rent_or_own                     7.645649  binary   mode
-employment_status               5.477759  nominal
-hhs_geo_region                  0.000000  nominal  none
-census_msa                      0.000000  nominal  none
+employment_status               5.477759  nominal  
+hhs_geo_region                  0.000000  nominal  none     C
+census_msa                      0.000000  nominal  none     C
 household_adults                0.932305  ratio
 household_children              0.932305  ratio
-employment_industry            49.910139  nominal  delete
-employment_occupation          50.434327  nominal  delete
+employment_industry            49.910139  nominal  delete   C
+employment_occupation          50.434327  nominal  delete   C
