@@ -93,6 +93,21 @@ employment_occupation_map = {
     'xtkaffoo':16
 }
 
+sex_map = {
+    'Male' = 1,
+    'Female' = 2
+}
+
+marital_map = {
+    'Married' = 1,
+    'Not Married' = 2
+}
+
+rent_map = {
+    'Own' = 1,
+    'Rent' = 2
+}
+
 df['age_group_numerical'] = df.age_group.map(age_map)
 df['education_numerical'] = df.education.map(education_map)
 df['income_poverty_numerical'] = df.income_poverty.map(income_poverty_map)
@@ -102,4 +117,7 @@ df['hhs_geo_region_numerical'] = df.hhs_geo_region.map(region_map)
 df['census_msa_numerical'] = df.census_msa.map(census_map)
 df['employment_industry_numerical'] = df.employment_industry.map(employment_industry_map)
 df['employment_occupation_numerical'] = df.employment_occupation.map(employment_occupation_map)
+df['sex_numerical'] = df.sex.map(sex_map)
+df['marital_status_numerical'] = df.marital_status.map(marital_map)
+df['rent_or_own_numerical'] = df.rent_or_own.map(rent_map)
 df
