@@ -1,8 +1,8 @@
 # Categorical boolean mask
-categorical_feature_mask = X.dtypes==object
+categorical_feature_mask = df.dtypes==object
 
 # filter categorical columns using mask and turn it into a list
-categorical_cols = X.columns[categorical_feature_mask].tolist()
+categorical_cols = df.columns[categorical_feature_mask].tolist()
 
 # import labelencoder
 from sklearn.preprocessing import LabelEncoder
@@ -11,6 +11,6 @@ from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 
 # apply le on categorical feature columns
-X[categorical_cols] = X[categorical_cols].apply(lambda col: le.fit_transform(col))
+df[categorical_cols] = df[categorical_cols].apply(lambda col: le.fit_transform(col))
 
-X[categorical_cols].head(6)
+df[categorical_cols].head(6)
