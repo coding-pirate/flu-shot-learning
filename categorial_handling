@@ -1,7 +1,7 @@
 Ratio data (household_adult,household_children) is perfect the way it is.  No changes necessary.
 Ordinal data (exceptage_group,education,income_poverty) is perfect the way it is.  No changes necessary.
 
-Ordinal data like age_group[18-34, 35-44, 45-54, 55-64, 65+], education[<12 Years, 12 Years, CollegeGraduate,  Some  College],
+Ordinal data like age_group[18-34, 35-44, 45-54, 55-64, 65+], education[<12 Years, 12 Years, Some  College, College Graduate],
 income_poverty[≤$75,000m. Above  poverty  but  below $75,000. Above$75,000] needs to be converted into regular numbers (0,1,2,3,...).
 
 Nominal data needs to be converted into regular numbers (0,1,2,3,...), and then one-hot encoded
