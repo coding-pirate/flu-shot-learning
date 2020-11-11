@@ -1,123 +1,128 @@
-age_map = {
-    '18 - 34 Years':1,
-    '35 - 44 Years':2,
-    '45 - 54 Years':3,
-    '55 - 64 Years':4,
-    '65+ Years':5
-}
+def non_numerical_to_numerical(df):
+        #this function takes in a dataframe (df) as input
+        #and returns a dataframe as output,
+        #where all the non-numerical data 
+        #has been converted to numerical form.
+        age_map = {
+        '18 - 34 Years':1,
+        '35 - 44 Years':2,
+        '45 - 54 Years':3,
+        '55 - 64 Years':4,
+        '65+ Years':5
+        }
 
-education_map = {
-    '< 12 Years':1,
-    '12 Years':2,
-    'Some College':3,
-    'College Graduate':4
-}
+        education_map = {
+            '< 12 Years':1,
+            '12 Years':2,
+            'Some College':3,
+            'College Graduate':4
+        }
 
-income_poverty_map = {
-    'Below Poverty':1,
-    '<= $75,000, Above Poverty':2,
-    '> $75,000':3
-}
+        income_poverty_map = {
+            'Below Poverty':1,
+            '<= $75,000, Above Poverty':2,
+            '> $75,000':3
+        }
 
-race_map = {
-    'White':1,
-    'Black':2,
-    'Other or Multiple':3
-}
+        race_map = {
+            'White':1,
+            'Black':2,
+            'Other or Multiple':3
+        }
 
-employment_map = {
-    'Not in Labor Force': 1,
-    'Employed': 2,
-    'Unemployed':3
-}
+        employment_map = {
+            'Not in Labor Force': 1,
+            'Employed': 2,
+            'Unemployed':3
+        }
 
-region_map = {
-    'atmpeygn': 1,
-    'bhuqouqj': 2,
-    'dqpwygqj': 3,
-    'fpwskwrf': 4,
-    'kbazzjca': 5,
-    'lrircsnp': 6,
-    'lzgpxyit': 7,
-    'mlyzmhmf': 8,
-    'oxchjgsf': 9,
-    'qufhixun': 10
-}
+        region_map = {
+            'atmpeygn': 1,
+            'bhuqouqj': 2,
+            'dqpwygqj': 3,
+            'fpwskwrf': 4,
+            'kbazzjca': 5,
+            'lrircsnp': 6,
+            'lzgpxyit': 7,
+            'mlyzmhmf': 8,
+            'oxchjgsf': 9,
+            'qufhixun': 10
+        }
 
-census_map = {
-    'MSA, Principle City':1,
-    'MSA, Not Principle  City':2,
-    'Non-MSA':3
-}
+        census_map = {
+            'MSA, Principle City':1,
+            'MSA, Not Principle  City':2,
+            'Non-MSA':3
+        }
 
-employment_industry_map = {
-    'arjwrbjb':1,
-    'atmlpfrs':2,
-    'cfqqtusy':3,
-    'dotnnunm':4,
-    'fcxhlnwr':5,
-    'haxffmxo':6,
-    'ldnlellj':7,
-    'mcubkhph':8,
-    'mfikgejo':9,
-    'msuufmds':10,
-    'nduyfdeo':11,
-    'phxvnwax':12,
-    'pxcmvdjn':13,
-    'qnlwzans':14,
-    'rucpziij':15,
-    'saaquncn':16,
-    'vjjrobsf':17,
-    'wlfvacwt':18,
-    'wxleyezf':19,
-    'xicduogh':20,
-    'xqicxuve':21
-}
+        employment_industry_map = {
+            'arjwrbjb':1,
+            'atmlpfrs':2,
+            'cfqqtusy':3,
+            'dotnnunm':4,
+            'fcxhlnwr':5,
+            'haxffmxo':6,
+            'ldnlellj':7,
+            'mcubkhph':8,
+            'mfikgejo':9,
+            'msuufmds':10,
+            'nduyfdeo':11,
+            'phxvnwax':12,
+            'pxcmvdjn':13,
+            'qnlwzans':14,
+            'rucpziij':15,
+            'saaquncn':16,
+            'vjjrobsf':17,
+            'wlfvacwt':18,
+            'wxleyezf':19,
+            'xicduogh':20,
+            'xqicxuve':21
+        }
 
-employment_occupation_map = {
-    'ccgxvspp':1,
-    'dlvbwzss':2,
-    'emcorrxb':3,
-    'hfxkjkmi':4,
-    'kldqjyjy':5,
-    'mxkfnird':6,
-    'oijqvulv':7,
-    'qxajmpny':8,
-    'rcertsgn':9,
-    'tfqavkke':10,
-    'ukymxvdu':11,
-    'uqqtjvyb':12,
-    'vlluhbov':13,
-    'xgwztkwe':14,
-    'xqwwgdyp':15, 
-    'xtkaffoo':16
-}
+        employment_occupation_map = {
+            'ccgxvspp':1,
+            'dlvbwzss':2,
+            'emcorrxb':3,
+            'hfxkjkmi':4,
+            'kldqjyjy':5,
+            'mxkfnird':6,
+            'oijqvulv':7,
+            'qxajmpny':8,
+            'rcertsgn':9,
+            'tfqavkke':10,
+            'ukymxvdu':11,
+            'uqqtjvyb':12,
+            'vlluhbov':13,
+            'xgwztkwe':14,
+            'xqwwgdyp':15, 
+            'xtkaffoo':16
+        }
 
-sex_map = {
-    'Male':1,
-    'Female':2
-}
+        sex_map = {
+            'Male':1,
+            'Female':2
+        }
 
-marital_map = {
-    'Married':1,
-    'Not Married':2
-}
+        marital_map = {
+            'Married':1,
+            'Not Married':2
+        }
 
-rent_map = {
-    'Own':1,
-    'Rent':2
-}
+        rent_map = {
+            'Own':1,
+            'Rent':2
+        }
 
-df['age_group_numerical'] = df.age_group.map(age_map)
-df['education_numerical'] = df.education.map(education_map)
-df['income_poverty_numerical'] = df.income_poverty.map(income_poverty_map)
-df['race_numerical'] = df.race.map(race_map)
-df['employment_status_numerical'] = df.employment_status.map(employment_map)
-df['hhs_geo_region_numerical'] = df.hhs_geo_region.map(region_map)
-df['census_msa_numerical'] = df.census_msa.map(census_map)
-df['employment_industry_numerical'] = df.employment_industry.map(employment_industry_map)
-df['employment_occupation_numerical'] = df.employment_occupation.map(employment_occupation_map)
-df['sex_numerical'] = df.sex.map(sex_map)
-df['marital_status_numerical'] = df.marital_status.map(marital_map)
-df['rent_or_own_numerical'] = df.rent_or_own.map(rent_map)
-df
+        df['age_group_numerical'] = df.age_group.map(age_map)
+        df['education_numerical'] = df.education.map(education_map)
+        df['income_poverty_numerical'] = df.income_poverty.map(income_poverty_map)
+        df['race_numerical'] = df.race.map(race_map)
+        df['employment_status_numerical'] = df.employment_status.map(employment_map)
+        df['hhs_geo_region_numerical'] = df.hhs_geo_region.map(region_map)
+        df['census_msa_numerical'] = df.census_msa.map(census_map)
+        df['employment_industry_numerical'] = df.employment_industry.map(employment_industry_map)
+        df['employment_occupation_numerical'] = df.employment_occupation.map(employment_occupation_map)
+        df['sex_numerical'] = df.sex.map(sex_map)
+        df['marital_status_numerical'] = df.marital_status.map(marital_map)
+        df['rent_or_own_numerical'] = df.rent_or_own.map(rent_map)
+        return df
