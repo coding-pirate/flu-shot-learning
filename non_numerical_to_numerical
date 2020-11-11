@@ -94,18 +94,18 @@ employment_occupation_map = {
 }
 
 sex_map = {
-    'Male' = 1,
-    'Female' = 2
+    'Male':1,
+    'Female':2
 }
 
 marital_map = {
-    'Married' = 1,
-    'Not Married' = 2
+    'Married':1,
+    'Not Married':2
 }
 
 rent_map = {
-    'Own' = 1,
-    'Rent' = 2
+    'Own':1,
+    'Rent':2
 }
 
 df['age_group_numerical'] = df.age_group.map(age_map)
