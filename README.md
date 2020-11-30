@@ -1,6 +1,10 @@
 # flu-shot-learning
 
-We are given a data set containing the responses of thousands of people to various survey questions. 
-Using ML (machine learning), we need to predict whether each person in the survey:
-(1) received or did not receive the H1N1 vaccine
-(2) received or did not receive the Seasonal flu vaccine
+Given a data set containing the responses of thousands of people to various survey questions, for each person in the survey, use machine learning to predict: 
+(1) the probability that they received the H1N1 vaccine
+(2) the probability that they received the Seasonal flu vaccine
+
+Overview: https://www.drivendata.org/competitions/66/flu-shot-learning/
+Problem description: https://www.drivendata.org/competitions/66/flu-shot-learning/page/211/
+About the data: https://www.drivendata.org/competitions/66/flu-shot-learning/page/213/
+Benchmark or walkthrough: https://www.drivendata.co/blog/predict-flu-vaccine-data-benchmark/
