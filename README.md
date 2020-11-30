@@ -1,6 +1,6 @@
 # flu-shot-learning
 
-Given a data set containing the responses of thousands of people to various survey questions, for each person in the survey, use machine learning to predict: 
+Given a data set containing the responses of thousands of people to various survey questions, for each person in the survey, to use machine learning to predict: 
 (1) the probability that they received the H1N1 vaccine
 (2) the probability that they received the Seasonal flu vaccine
 
